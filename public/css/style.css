@@ -21,12 +21,10 @@ h2 {
   background-color: #10555A;
   margin-bottom: 10px;
 }
-
 .header__search input[type=text] {
   padding: 6px;
   border: none;
 }
-
 .header__search input[type=submit] {
   float: right;
   padding: 6px 10px;
@@ -43,7 +41,6 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 2rem;
 }
-
 .news__card {
   text-decoration: none;
   color: #080808;
@@ -51,7 +48,13 @@ h2 {
   padding: 20px;
   border-radius: 5px;
 }
-
 .news__card:hover {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+.news-simgle {
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
 }/*# sourceMappingURL=style.css.map */

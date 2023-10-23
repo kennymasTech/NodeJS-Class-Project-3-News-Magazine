@@ -16,7 +16,9 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 
+// Routes
 const newsRouter = require('./src/routes/news');
 app.use('/', newsRouter)
+app.use('/article', newsRouter)
 
 app.listen(PORT, () => console.log(`My Server Is Running On PORT ${PORT}`));

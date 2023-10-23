@@ -11,14 +11,21 @@
     <header class="header">
         <div class="header__logo">Node.js News</div>
 
-        <input type="text" name="search" id="" placeholder="search news">
+        <div class="header__search">
+            <form action="/">
+
+                <input type="text" name="search" placeholder="search for news" required>
+                <input type="submit" value="search">
+
+            </form>
+        </div>
     </header>
 
     <div class="wrapper">
         <div class="news">
             <% if (articles != null) { %>
             <% articles.forEach(function(article, index) {%>
-                <a href="#" class="news__card">
+                <a href="/article/<%- article.id %>" class="news__card">
                     <img src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered %>">
                     <h2><%- article.title.rendered %></h2>
                     <p><%- article.excerpt.rendered %></p>
