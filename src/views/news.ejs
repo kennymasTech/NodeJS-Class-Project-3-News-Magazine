@@ -11,14 +11,7 @@
     <header class="header">
         <div class="header__logo">Node.js News</div>
 
-        <div class="header__search">
-            <form action="/">
-
-                <input type="text" name="search" placeholder="search for news" required>
-                <input type="submit" value="search">
-
-            </form>
-        </div>
+        <%- include('./partials/search.ejs') %>   
     </header>
 
     <div class="wrapper">

@@ -15,12 +15,18 @@
     </header>
 
     <div class="wrapper">
-        <div class="news-single">
-
+        <div class="news">
+            <% if (articles != null) { %>
+            <% articles.forEach(function(article, index) {%>
+                <a href="/article/<%- article.id %>" class="news__card">
+                    <img src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered %>">
                     <h2><%- article.title.rendered %></h2>
-                    <p><%- article.content.rendered %></p>
+                    <p><%- article.excerpt.rendered %></p>
                 </a>
-        
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %>
         </div>
     </div>
     
